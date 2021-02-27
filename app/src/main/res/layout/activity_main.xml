@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-44dp"
+        tools:layout_editor_absoluteY="51dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="413dp"
+            android:layout_height="60dp"
+            android:height="60dp"
+            android:background="#4CAF50"
+            android:fontFamily="sans-serif-condensed-light"
+            android:fontFeatureSettings="20dp"
+            android:gravity="center"
+            android:layerType="none"
+            android:text="@string/music_shop"
+            android:textAlignment="inherit"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/EnterYourName"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="166dp"
+            android:contentDescription="@string/MusicShopBaner"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/music_shop_main_view"
+            tools:srcCompat="@drawable/music_shop_main_view" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Items"
+            android:textAlignment="textEnd"
+            android:textColor="#F84107"
+            android:textSize="30sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="173dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

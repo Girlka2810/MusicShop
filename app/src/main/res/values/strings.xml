@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MusicShop</string>
+    <string name="music_shop">Music Shop</string>
+    <string name="MusicShopBaner">TODO</string>
+    <string name="EnterYourName">Ваше имя</string>
+    <string name="Items">Товары</string>
+</resources>
