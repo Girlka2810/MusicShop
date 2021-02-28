@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brands">
+        <item>Акустическая гитара TERRIS</item>
+        <item>Электрогитара YAMAHA Pacifica Red 113JL</item>
+        <item>Электрогитара YAMAHA Pacifica 112JL</item>
+
+    </string-array>
+</resources>
