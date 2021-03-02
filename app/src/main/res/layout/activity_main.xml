@@ -56,51 +56,79 @@
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
-            android:layout_height="271dp"
+            android:layout_height="60dp"
             android:entries="@array/brands" />
+
+          <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:contentDescription="gutarPicture"
+            app:srcCompat="@drawable/gutar_1" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="97dp"
+            android:layout_height="41dp"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/price"
-                android:layout_width="113dp"
-                android:layout_height="96dp"
-                android:backgroundTint="#4CAF50"
-                android:textColor="#FFFFFF" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="113dp"
-                android:layout_height="96dp"
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="#4CAF50"
-                android:backgroundTint="#4CAF50"
-                android:foreground="@android:drawable/ic_input_delete" />
+                android:text="@string/Price"
+                android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="113dp"
-                android:layout_height="96dp"
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="#4CAF50"
-                android:text="Button" />
+                android:text="@string/priceView"
+                android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="113dp"
-                android:layout_height="96dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF"
-                android:backgroundTint="#4CAF50"
-                android:foreground="@android:drawable/ic_input_add" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="48dp"
+            android:background="#FCFFFC"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4CAF50"
+                android:backgroundTint="#4CAF50"
+                android:text="@string/minus"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_weight="1"
+                android:foregroundGravity="center_vertical"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4CAF50"
+                android:text="@string/plus"
+                android:textSize="18sp"
+                app:iconTint="#4CAF50" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
             android:orientation="vertical">
 
             <Button
@@ -113,6 +141,7 @@
                 android:text="Купить"
                 android:textSize="36sp"
                 app:iconTint="#4CAF50" />
+
         </LinearLayout><![CDATA[
 
         />

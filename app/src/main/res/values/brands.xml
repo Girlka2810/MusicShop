@@ -4,6 +4,16 @@
         <item>Акустическая гитара TERRIS</item>
         <item>Электрогитара YAMAHA Pacifica Red 113JL</item>
         <item>Электрогитара YAMAHA Pacifica 112JL</item>
+    </string-array>
+    <integer-array name="prices">
+        <item>25000</item>
+        <item>50000</item>
+        <item>65000</item>
+    </integer-array>
+    <string-array name="gutarPic">
+        <item>@drawable/gutar_1</item>
+        <item>@drawable/gutar_2</item>
+        <item>@drawable/gutar_3</item>
 
     </string-array>
 </resources>

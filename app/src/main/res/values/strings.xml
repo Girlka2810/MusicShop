@@ -4,5 +4,10 @@
     <string name="MusicShopBanner">TODO</string>
     <string name="EnterYourName">Ваше имя</string>
     <string name="Items">Товары</string>
+    <string name="Price">Стоимость:</string>
+    <string name="priceView">TextView</string>
+    <string name="Quantity">TextView</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
 
 </resources>
