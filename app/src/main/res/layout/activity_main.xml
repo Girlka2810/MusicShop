@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text="@string/Items"
             android:textAlignment="textEnd"
-            android:textColor="#F84107"
+            android:textColor="#FF5722"
             android:textSize="30sp" />
 
         <Spinner
@@ -59,12 +59,40 @@
             android:layout_height="60dp"
             android:entries="@array/brands" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:contentDescription="gutarPicture"
-            app:srcCompat="@drawable/gutar_1" />
+            android:layout_height="137dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="213dp"
+                android:layout_height="135dp"
+                android:contentDescription="gutarPicture"
+                app:srcCompat="@drawable/gutar_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:text="TextView"
+                    android:textColor="#FF5722"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:text="TextView"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"

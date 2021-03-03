@@ -44,12 +44,14 @@ class MainActivity : AppCompatActivity() {
 
                     var image = findViewById<ImageView>(R.id.imageView3)
                     image.setImageDrawable(currentModel.picture)
-
-                    var priceView = findViewById<TextView>(R.id.textView4)
+                     var modelNameView = findViewById<TextView>(R.id.textView5)
+                     modelNameView.text = textView.text
+                    var priceView = findViewById<TextView>(R.id.textView6)
                     priceView.text = currentModel.price.toString() + " RUB"
                 }
             }
     }
+
     }
        data class Model (val name: String, var price: Int, var picture: Drawable ) {
 
