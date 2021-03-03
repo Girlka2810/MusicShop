@@ -51,7 +51,25 @@ class MainActivity : AppCompatActivity() {
                 }
             }
     }
-
+    public fun CountDecrease(view: View){
+        var count = findViewById<TextView>(R.id.minus)
+        var totalPrice = findViewById<TextView>(R.id.totalPrice)
+        var num = count.text.toString().toInt()
+        if (num == 0)
+            return
+        else
+            num--
+        count.text = num.toString()
+        totalPrice.text = (currentModel.price*num).toString() + " RUB"
+    }
+    public fun CountIncrease(view: View){
+        var count = findViewById<TextView>(R.id.plus)
+        var totalPrice = findViewById<TextView>(R.id.totalPrice)
+        var num = count.text.toString().toInt()
+        num++
+        count.text = num.toString()
+        totalPrice.text = (currentModel.price*num).toString() + " RUB"
+    }
     }
        data class Model (val name: String, var price: Int, var picture: Drawable ) {
 
