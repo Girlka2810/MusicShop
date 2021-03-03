@@ -130,6 +130,7 @@
                 android:layout_weight="1"
                 android:background="#4CAF50"
                 android:backgroundTint="#4CAF50"
+                android:onClick="CountDecrease"
                 android:text="@string/minus"
                 android:textSize="18sp" />
 
@@ -149,6 +150,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#4CAF50"
+                android:onClick="CountIncrease"
                 android:text="@string/plus"
                 android:textSize="18sp"
                 app:iconTint="#4CAF50" />
