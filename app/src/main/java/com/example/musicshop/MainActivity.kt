@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             }
     }
     public fun CountDecrease(view: View){
-        var count = findViewById<TextView>(R.id.minus)
+        var count = findViewById<TextView>(R.id.quantity)
         var totalPrice = findViewById<TextView>(R.id.totalPrice)
         var num = count.text.toString().toInt()
         if (num == 0)
@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         totalPrice.text = (currentModel.price*num).toString() + " RUB"
     }
     public fun CountIncrease(view: View){
-        var count = findViewById<TextView>(R.id.plus)
+        var count = findViewById<TextView>(R.id.quantity)
         var totalPrice = findViewById<TextView>(R.id.totalPrice)
         var num = count.text.toString().toInt()
         num++
