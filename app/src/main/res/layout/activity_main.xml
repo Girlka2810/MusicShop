@@ -59,10 +59,10 @@
             android:layout_height="60dp"
             android:entries="@array/brands" />
 
-          <ImageView
+        <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="195dp"
+            android:layout_height="135dp"
             android:contentDescription="gutarPicture"
             app:srcCompat="@drawable/gutar_1" />
 

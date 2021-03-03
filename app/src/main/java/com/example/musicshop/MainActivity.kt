@@ -44,8 +44,7 @@ class MainActivity : AppCompatActivity() {
 
                     var image = findViewById<ImageView>(R.id.imageView3)
                     image.setImageDrawable(currentModel.picture)
-                    var modelNameView = findViewById<TextView>(R.id.textView)
-                    modelNameView.text = textView.text
+
                     var priceView = findViewById<TextView>(R.id.textView4)
                     priceView.text = currentModel.price.toString() + " RUB"
                 }
