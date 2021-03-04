@@ -9,5 +9,6 @@
     <string name="Quantity">TextView</string>
     <string name="minus">-</string>
     <string name="plus">+</string>
-
+    <string name="BROADCAST_BUY_MESSAGE">ru.music_shop.action.BROADCAST_BUY_MESSAGE</string>
+    <string name="BUY_MESSAGE">Покупка совершена</string>
 </resources>

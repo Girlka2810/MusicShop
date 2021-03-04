@@ -1,5 +1,6 @@
 package com.example.musicshop
 
+import android.content.Intent
 import android.graphics.ColorSpace
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private val modelsList = arrayListOf<Model>()
     private val modelsNames = arrayListOf<String>()
+    private var basket = arrayListOf<BasketItem>()
     private lateinit var currentModel: Model
 
 
@@ -70,7 +72,40 @@ class MainActivity : AppCompatActivity() {
         count.text = num.toString()
         totalPrice.text = (currentModel.price*num).toString() + " RUB"
     }
+    public fun AddToBasketButtonClick(view: View) {
+        var countView = findViewById<TextView>(R.id.quantity)
+        var count = countView.text.toString().toInt()
+        var totalPrice = currentModel.price*count
+        var basketItem = BasketItem(currentModel, count, totalPrice)
+        if (count == 0 || totalPrice == 0)
+            return
+        basket.add(basketItem)
+        var toast = Toast.makeText(this, "Позиция добавлена", Toast.LENGTH_SHORT)
+        toast.show()
+
+        var totalPriceView = findViewById<TextView>(R.id.totalPrice)
+        countView.text = "0"
+        totalPriceView.text = ""
+    }
+    public fun OnBasketButtonClick(view: View){
+        var names = arrayListOf<String>()
+        var counts = arrayListOf<Int>()
+        var totals = arrayListOf<Int>()
+        basket.forEach{
+            names.add(it.model.name)
+            counts.add(it.count)
+            totals.add(it.totalPrice)
+        }
+        var intent = Intent(this, BasketActivity::class.java)
+        intent.putExtra("names", names)
+        intent.putExtra("counts", counts)
+        intent.putExtra("totals", totals)
+        startActivity(intent)
+    }
     }
        data class Model (val name: String, var price: Int, var picture: Drawable ) {
 
         }
+class BasketItem(val model: Model, var count: Int, var totalPrice: Int){
+
+}
